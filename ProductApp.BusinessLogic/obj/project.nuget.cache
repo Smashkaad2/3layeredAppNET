@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gc85JWcTQ3Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Javier\\Desktop\\ProductApp\\ProductApp.BusinessLogic\\ProductApp.BusinessLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Javier\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\Javier\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
