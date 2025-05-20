@@ -31,3 +31,15 @@ C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\obj\Debug\net9.0\ref
 C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\obj\Debug\net9.0\ProductApp.BusinessLogic.pdb
 C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\obj\Debug\net9.0\ProductApp.BusinessLogic.genruntimeconfig.cache
 C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\obj\Debug\net9.0\ref\ProductApp.BusinessLogic.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Google.Protobuf.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.AspNetCore.Server.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.Core.Api.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.Net.Client.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.Net.ClientFactory.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Grpc.Net.Common.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Javier\Desktop\ProductApp\ProductApp.BusinessLogic\obj\Debug\net9.0\ProductApp.BusinessLogic.sourcelink.json

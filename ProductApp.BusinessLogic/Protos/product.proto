@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option csharp_namespace = "ProductApp.BusinessLogic.Protos";
+
+package product;
+
+// Servicio de productos para la comunicación gRPC
+service ProductGrpcService {
+  // Crear un nuevo producto
+  rpc CreateProduct (ProductRequest) returns (ProductResponse);
+  
+  // Obtener todos los productos
+  rpc GetAllProducts (EmptyRequest) returns (ProductsListResponse);
+  
+  // Obtener producto por ID
+  rpc GetProduct (ProductIdRequest) returns (ProductResponse);
+  
+  // Actualizar un producto
+  rpc UpdateProduct (ProductRequest) returns (ProductResponse);
+  
+  // Eliminar un producto
+  rpc DeleteProduct (ProductIdRequest) returns (DeleteResponse);
+}
+
+// Mensaje vacío para solicitudes sin parámetros
+message EmptyRequest {
+}
+
+// Mensaje para solicitar producto por ID
+message ProductIdRequest {
+  int32 id = 1;
+}
+
+// Mensaje para enviar o recibir un producto
+message ProductRequest {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  double price = 4;
+}
+
+// Respuesta con un producto
+message ProductResponse {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  double price = 4;
+  bool success = 5;
+  string message = 6;
+}
+
+// Respuesta con lista de productos
+message ProductsListResponse {
+  repeated ProductResponse products = 1;
+}
+
+// Respuesta para operaciones de eliminación
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+}
