@@ -8,9 +8,6 @@
 using grpc = global::Grpc.Core;
 
 namespace ProductApp.BusinessLogic.Protos {
-  /// <summary>
-  /// Servicio de productos para la comunicación gRPC
-  /// </summary>
   public static partial class ProductGrpcService
   {
     static readonly string __ServiceName = "product.ProductGrpcService";
@@ -49,33 +46,25 @@ namespace ProductApp.BusinessLogic.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductRequest> __Marshaller_product_ProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.EmptyRequest> __Marshaller_product_EmptyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.EmptyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductListResponse> __Marshaller_product_ProductListResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductListResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductIdRequest> __Marshaller_product_ProductIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductIdRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductResponse> __Marshaller_product_ProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.EmptyRequest> __Marshaller_product_EmptyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.EmptyRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductsListResponse> __Marshaller_product_ProductsListResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductsListResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductIdRequest> __Marshaller_product_ProductIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductIdRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.ProductRequest> __Marshaller_product_ProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.ProductRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ProductApp.BusinessLogic.Protos.DeleteResponse> __Marshaller_product_DeleteResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductApp.BusinessLogic.Protos.DeleteResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse> __Method_CreateProduct = new grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "CreateProduct",
-        __Marshaller_product_ProductRequest,
-        __Marshaller_product_ProductResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ProductApp.BusinessLogic.Protos.EmptyRequest, global::ProductApp.BusinessLogic.Protos.ProductsListResponse> __Method_GetAllProducts = new grpc::Method<global::ProductApp.BusinessLogic.Protos.EmptyRequest, global::ProductApp.BusinessLogic.Protos.ProductsListResponse>(
+    static readonly grpc::Method<global::ProductApp.BusinessLogic.Protos.EmptyRequest, global::ProductApp.BusinessLogic.Protos.ProductListResponse> __Method_GetAllProducts = new grpc::Method<global::ProductApp.BusinessLogic.Protos.EmptyRequest, global::ProductApp.BusinessLogic.Protos.ProductListResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllProducts",
         __Marshaller_product_EmptyRequest,
-        __Marshaller_product_ProductsListResponse);
+        __Marshaller_product_ProductListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductIdRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse> __Method_GetProduct = new grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductIdRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse>(
@@ -83,6 +72,14 @@ namespace ProductApp.BusinessLogic.Protos {
         __ServiceName,
         "GetProduct",
         __Marshaller_product_ProductIdRequest,
+        __Marshaller_product_ProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse> __Method_CreateProduct = new grpc::Method<global::ProductApp.BusinessLogic.Protos.ProductRequest, global::ProductApp.BusinessLogic.Protos.ProductResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateProduct",
+        __Marshaller_product_ProductRequest,
         __Marshaller_product_ProductResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -134,241 +131,101 @@ namespace ProductApp.BusinessLogic.Protos {
       {
       }
 
-      /// <summary>
-      /// Crear un nuevo producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse CreateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateProduct(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Crear un nuevo producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse CreateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_CreateProduct, null, options, request);
-      }
-      /// <summary>
-      /// Crear un nuevo producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> CreateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateProductAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Crear un nuevo producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> CreateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_CreateProduct, null, options, request);
-      }
-      /// <summary>
-      /// Obtener todos los productos
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ProductApp.BusinessLogic.Protos.ProductsListResponse GetAllProducts(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ProductApp.BusinessLogic.Protos.ProductListResponse GetAllProducts(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllProducts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Obtener todos los productos
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ProductApp.BusinessLogic.Protos.ProductsListResponse GetAllProducts(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::CallOptions options)
+      public virtual global::ProductApp.BusinessLogic.Protos.ProductListResponse GetAllProducts(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAllProducts, null, options, request);
       }
-      /// <summary>
-      /// Obtener todos los productos
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductsListResponse> GetAllProductsAsync(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductListResponse> GetAllProductsAsync(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllProductsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Obtener todos los productos
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductsListResponse> GetAllProductsAsync(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductListResponse> GetAllProductsAsync(global::ProductApp.BusinessLogic.Protos.EmptyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAllProducts, null, options, request);
       }
-      /// <summary>
-      /// Obtener producto por ID
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse GetProduct(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProduct(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Obtener producto por ID
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse GetProduct(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProduct, null, options, request);
       }
-      /// <summary>
-      /// Obtener producto por ID
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> GetProductAsync(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Obtener producto por ID
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> GetProductAsync(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProduct, null, options, request);
       }
-      /// <summary>
-      /// Actualizar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse CreateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateProduct(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse CreateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateProduct, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> CreateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateProductAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> CreateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateProduct, null, options, request);
+      }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse UpdateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateProduct(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Actualizar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.ProductResponse UpdateProduct(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateProduct, null, options, request);
       }
-      /// <summary>
-      /// Actualizar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> UpdateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateProductAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Actualizar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.ProductResponse> UpdateProductAsync(global::ProductApp.BusinessLogic.Protos.ProductRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateProduct, null, options, request);
       }
-      /// <summary>
-      /// Eliminar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.DeleteResponse DeleteProduct(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteProduct(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Eliminar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::ProductApp.BusinessLogic.Protos.DeleteResponse DeleteProduct(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteProduct, null, options, request);
       }
-      /// <summary>
-      /// Eliminar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.DeleteResponse> DeleteProductAsync(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteProductAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Eliminar un producto
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::ProductApp.BusinessLogic.Protos.DeleteResponse> DeleteProductAsync(global::ProductApp.BusinessLogic.Protos.ProductIdRequest request, grpc::CallOptions options)
       {

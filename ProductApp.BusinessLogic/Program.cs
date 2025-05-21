@@ -1,4 +1,4 @@
-using ProductApp.BusinessLogic.GrpcServices;
+using ProductApp.BusinessLogic.Models;
 using ProductApp.BusinessLogic.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpc();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
-builder.Services.AddScoped<ProductApiService>();
+builder.Services.AddSingleton<ProductService>();
+
 
 // Configuración de Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -21,6 +22,13 @@ builder.Services.AddCors(options =>
         policy.AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader();
+    });
+
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
 
@@ -36,13 +44,15 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseCors("AllowAll");
+app.MapGrpcService<ProductGrpcServiceImpl>();
+app.MapGet("/", () => "Esta es una aplicación gRPC. Cliente gRPC requerido para comunicarse.");
 
-app.UseEndpoints(endpoints =>
-{
-    // Mapeo de servicios gRPC
-    endpoints.MapGrpcService<ProductGrpcService>();
-    // Mapeo de controladores API (si necesitas una API REST adicional)
-    endpoints.MapControllers();
-});
+// app.UseEndpoints(endpoints =>
+// {
+//     // Mapeo de servicios gRPC
+//     endpoints.MapGrpcService<Service>();
+//     // Mapeo de controladores API (si necesitas una API REST adicional)
+//     endpoints.MapControllers();
+// });
 
 app.Run();

@@ -27,29 +27,32 @@ namespace ProductApp.BusinessLogic.Protos {
             "Cg1wcm9kdWN0LnByb3RvEgdwcm9kdWN0Ig4KDEVtcHR5UmVxdWVzdCIeChBQ",
             "cm9kdWN0SWRSZXF1ZXN0EgoKAmlkGAEgASgFIk4KDlByb2R1Y3RSZXF1ZXN0",
             "EgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyAB",
-            "KAkSDQoFcHJpY2UYBCABKAEicQoPUHJvZHVjdFJlc3BvbnNlEgoKAmlkGAEg",
-            "ASgFEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSDQoFcHJp",
-            "Y2UYBCABKAESDwoHc3VjY2VzcxgFIAEoCBIPCgdtZXNzYWdlGAYgASgJIkIK",
-            "FFByb2R1Y3RzTGlzdFJlc3BvbnNlEioKCHByb2R1Y3RzGAEgAygLMhgucHJv",
-            "ZHVjdC5Qcm9kdWN0UmVzcG9uc2UiMgoORGVsZXRlUmVzcG9uc2USDwoHc3Vj",
-            "Y2VzcxgBIAEoCBIPCgdtZXNzYWdlGAIgASgJMuwCChJQcm9kdWN0R3JwY1Nl",
-            "cnZpY2USQgoNQ3JlYXRlUHJvZHVjdBIXLnByb2R1Y3QuUHJvZHVjdFJlcXVl",
-            "c3QaGC5wcm9kdWN0LlByb2R1Y3RSZXNwb25zZRJGCg5HZXRBbGxQcm9kdWN0",
-            "cxIVLnByb2R1Y3QuRW1wdHlSZXF1ZXN0Gh0ucHJvZHVjdC5Qcm9kdWN0c0xp",
-            "c3RSZXNwb25zZRJBCgpHZXRQcm9kdWN0EhkucHJvZHVjdC5Qcm9kdWN0SWRS",
-            "ZXF1ZXN0GhgucHJvZHVjdC5Qcm9kdWN0UmVzcG9uc2USQgoNVXBkYXRlUHJv",
-            "ZHVjdBIXLnByb2R1Y3QuUHJvZHVjdFJlcXVlc3QaGC5wcm9kdWN0LlByb2R1",
-            "Y3RSZXNwb25zZRJDCg1EZWxldGVQcm9kdWN0EhkucHJvZHVjdC5Qcm9kdWN0",
-            "SWRSZXF1ZXN0GhcucHJvZHVjdC5EZWxldGVSZXNwb25zZUIiqgIfUHJvZHVj",
-            "dEFwcC5CdXNpbmVzc0xvZ2ljLlByb3Rvc2IGcHJvdG8z"));
+            "KAkSDQoFcHJpY2UYBCABKAEicQoPUHJvZHVjdFJlc3BvbnNlEg8KB3N1Y2Nl",
+            "c3MYASABKAgSDwoHbWVzc2FnZRgCIAEoCRIKCgJpZBgDIAEoBRIMCgRuYW1l",
+            "GAQgASgJEhMKC2Rlc2NyaXB0aW9uGAUgASgJEg0KBXByaWNlGAYgASgBIj0K",
+            "E1Byb2R1Y3RMaXN0UmVzcG9uc2USJgoIcHJvZHVjdHMYASADKAsyFC5wcm9k",
+            "dWN0LlByb2R1Y3RJdGVtIksKC1Byb2R1Y3RJdGVtEgoKAmlkGAEgASgFEgwK",
+            "BG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSDQoFcHJpY2UYBCAB",
+            "KAEiMgoORGVsZXRlUmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCBIPCgdtZXNz",
+            "YWdlGAIgASgJMusCChJQcm9kdWN0R3JwY1NlcnZpY2USRQoOR2V0QWxsUHJv",
+            "ZHVjdHMSFS5wcm9kdWN0LkVtcHR5UmVxdWVzdBocLnByb2R1Y3QuUHJvZHVj",
+            "dExpc3RSZXNwb25zZRJBCgpHZXRQcm9kdWN0EhkucHJvZHVjdC5Qcm9kdWN0",
+            "SWRSZXF1ZXN0GhgucHJvZHVjdC5Qcm9kdWN0UmVzcG9uc2USQgoNQ3JlYXRl",
+            "UHJvZHVjdBIXLnByb2R1Y3QuUHJvZHVjdFJlcXVlc3QaGC5wcm9kdWN0LlBy",
+            "b2R1Y3RSZXNwb25zZRJCCg1VcGRhdGVQcm9kdWN0EhcucHJvZHVjdC5Qcm9k",
+            "dWN0UmVxdWVzdBoYLnByb2R1Y3QuUHJvZHVjdFJlc3BvbnNlEkMKDURlbGV0",
+            "ZVByb2R1Y3QSGS5wcm9kdWN0LlByb2R1Y3RJZFJlcXVlc3QaFy5wcm9kdWN0",
+            "LkRlbGV0ZVJlc3BvbnNlQiKqAh9Qcm9kdWN0QXBwLkJ1c2luZXNzTG9naWMu",
+            "UHJvdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.EmptyRequest), global::ProductApp.BusinessLogic.Protos.EmptyRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductIdRequest), global::ProductApp.BusinessLogic.Protos.ProductIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductRequest), global::ProductApp.BusinessLogic.Protos.ProductRequest.Parser, new[]{ "Id", "Name", "Description", "Price" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductResponse), global::ProductApp.BusinessLogic.Protos.ProductResponse.Parser, new[]{ "Id", "Name", "Description", "Price", "Success", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductsListResponse), global::ProductApp.BusinessLogic.Protos.ProductsListResponse.Parser, new[]{ "Products" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductResponse), global::ProductApp.BusinessLogic.Protos.ProductResponse.Parser, new[]{ "Success", "Message", "Id", "Name", "Description", "Price" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductListResponse), global::ProductApp.BusinessLogic.Protos.ProductListResponse.Parser, new[]{ "Products" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.ProductItem), global::ProductApp.BusinessLogic.Protos.ProductItem.Parser, new[]{ "Id", "Name", "Description", "Price" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProductApp.BusinessLogic.Protos.DeleteResponse), global::ProductApp.BusinessLogic.Protos.DeleteResponse.Parser, new[]{ "Success", "Message" }, null, null, null, null)
           }));
     }
@@ -57,9 +60,6 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
   #region Messages
-  /// <summary>
-  /// Mensaje vacío para solicitudes sin parámetros
-  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EmptyRequest : pb::IMessage<EmptyRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -213,9 +213,6 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
 
-  /// <summary>
-  /// Mensaje para solicitar producto por ID
-  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductIdRequest : pb::IMessage<ProductIdRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -406,9 +403,6 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
 
-  /// <summary>
-  /// Mensaje para enviar o recibir un producto
-  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductRequest : pb::IMessage<ProductRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -710,9 +704,6 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
 
-  /// <summary>
-  /// Respuesta con un producto
-  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductResponse : pb::IMessage<ProductResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -748,12 +739,12 @@ namespace ProductApp.BusinessLogic.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProductResponse(ProductResponse other) : this() {
+      success_ = other.success_;
+      message_ = other.message_;
       id_ = other.id_;
       name_ = other.name_;
       description_ = other.description_;
       price_ = other.price_;
-      success_ = other.success_;
-      message_ = other.message_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -763,56 +754,8 @@ namespace ProductApp.BusinessLogic.Protos {
       return new ProductResponse(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "description" field.</summary>
-    public const int DescriptionFieldNumber = 3;
-    private string description_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Description {
-      get { return description_; }
-      set {
-        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "price" field.</summary>
-    public const int PriceFieldNumber = 4;
-    private double price_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double Price {
-      get { return price_; }
-      set {
-        price_ = value;
-      }
-    }
-
     /// <summary>Field number for the "success" field.</summary>
-    public const int SuccessFieldNumber = 5;
+    public const int SuccessFieldNumber = 1;
     private bool success_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -824,7 +767,7 @@ namespace ProductApp.BusinessLogic.Protos {
     }
 
     /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 6;
+    public const int MessageFieldNumber = 2;
     private string message_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -832,6 +775,54 @@ namespace ProductApp.BusinessLogic.Protos {
       get { return message_; }
       set {
         message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 3;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 4;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 5;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 6;
+    private double price_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Price {
+      get { return price_; }
+      set {
+        price_ = value;
       }
     }
 
@@ -850,12 +841,12 @@ namespace ProductApp.BusinessLogic.Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Success != other.Success) return false;
+      if (Message != other.Message) return false;
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
       if (Description != other.Description) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Price, other.Price)) return false;
-      if (Success != other.Success) return false;
-      if (Message != other.Message) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -863,12 +854,12 @@ namespace ProductApp.BusinessLogic.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (Price != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Price);
-      if (Success != false) hash ^= Success.GetHashCode();
-      if (Message.Length != 0) hash ^= Message.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -887,29 +878,29 @@ namespace ProductApp.BusinessLogic.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Description);
-      }
-      if (Price != 0D) {
-        output.WriteRawTag(33);
-        output.WriteDouble(Price);
-      }
       if (Success != false) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(8);
         output.WriteBool(Success);
       }
       if (Message.Length != 0) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(18);
         output.WriteString(Message);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Description);
+      }
+      if (Price != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Price);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -921,29 +912,29 @@ namespace ProductApp.BusinessLogic.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Description);
-      }
-      if (Price != 0D) {
-        output.WriteRawTag(33);
-        output.WriteDouble(Price);
-      }
       if (Success != false) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(8);
         output.WriteBool(Success);
       }
       if (Message.Length != 0) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(18);
         output.WriteString(Message);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Description);
+      }
+      if (Price != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Price);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -955,6 +946,12 @@ namespace ProductApp.BusinessLogic.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
@@ -966,12 +963,6 @@ namespace ProductApp.BusinessLogic.Protos {
       }
       if (Price != 0D) {
         size += 1 + 8;
-      }
-      if (Success != false) {
-        size += 1 + 1;
-      }
-      if (Message.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -985,6 +976,12 @@ namespace ProductApp.BusinessLogic.Protos {
       if (other == null) {
         return;
       }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
       if (other.Id != 0) {
         Id = other.Id;
       }
@@ -996,12 +993,6 @@ namespace ProductApp.BusinessLogic.Protos {
       }
       if (other.Price != 0D) {
         Price = other.Price;
-      }
-      if (other.Success != false) {
-        Success = other.Success;
-      }
-      if (other.Message.Length != 0) {
-        Message = other.Message;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1019,27 +1010,27 @@ namespace ProductApp.BusinessLogic.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Description = input.ReadString();
-            break;
-          }
-          case 33: {
-            Price = input.ReadDouble();
-            break;
-          }
-          case 40: {
             Success = input.ReadBool();
             break;
           }
-          case 50: {
+          case 18: {
             Message = input.ReadString();
+            break;
+          }
+          case 24: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            Name = input.ReadString();
+            break;
+          }
+          case 42: {
+            Description = input.ReadString();
+            break;
+          }
+          case 49: {
+            Price = input.ReadDouble();
             break;
           }
         }
@@ -1058,27 +1049,27 @@ namespace ProductApp.BusinessLogic.Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Description = input.ReadString();
-            break;
-          }
-          case 33: {
-            Price = input.ReadDouble();
-            break;
-          }
-          case 40: {
             Success = input.ReadBool();
             break;
           }
-          case 50: {
+          case 18: {
             Message = input.ReadString();
+            break;
+          }
+          case 24: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            Name = input.ReadString();
+            break;
+          }
+          case 42: {
+            Description = input.ReadString();
+            break;
+          }
+          case 49: {
+            Price = input.ReadDouble();
             break;
           }
         }
@@ -1088,20 +1079,17 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
 
-  /// <summary>
-  /// Respuesta con lista de productos
-  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ProductsListResponse : pb::IMessage<ProductsListResponse>
+  public sealed partial class ProductListResponse : pb::IMessage<ProductListResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ProductsListResponse> _parser = new pb::MessageParser<ProductsListResponse>(() => new ProductsListResponse());
+    private static readonly pb::MessageParser<ProductListResponse> _parser = new pb::MessageParser<ProductListResponse>(() => new ProductListResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ProductsListResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<ProductListResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1117,7 +1105,7 @@ namespace ProductApp.BusinessLogic.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductsListResponse() {
+    public ProductListResponse() {
       OnConstruction();
     }
 
@@ -1125,37 +1113,37 @@ namespace ProductApp.BusinessLogic.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductsListResponse(ProductsListResponse other) : this() {
+    public ProductListResponse(ProductListResponse other) : this() {
       products_ = other.products_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductsListResponse Clone() {
-      return new ProductsListResponse(this);
+    public ProductListResponse Clone() {
+      return new ProductListResponse(this);
     }
 
     /// <summary>Field number for the "products" field.</summary>
     public const int ProductsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::ProductApp.BusinessLogic.Protos.ProductResponse> _repeated_products_codec
-        = pb::FieldCodec.ForMessage(10, global::ProductApp.BusinessLogic.Protos.ProductResponse.Parser);
-    private readonly pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductResponse> products_ = new pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductResponse>();
+    private static readonly pb::FieldCodec<global::ProductApp.BusinessLogic.Protos.ProductItem> _repeated_products_codec
+        = pb::FieldCodec.ForMessage(10, global::ProductApp.BusinessLogic.Protos.ProductItem.Parser);
+    private readonly pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductItem> products_ = new pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductItem>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductResponse> Products {
+    public pbc::RepeatedField<global::ProductApp.BusinessLogic.Protos.ProductItem> Products {
       get { return products_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ProductsListResponse);
+      return Equals(other as ProductListResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ProductsListResponse other) {
+    public bool Equals(ProductListResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1220,7 +1208,7 @@ namespace ProductApp.BusinessLogic.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProductsListResponse other) {
+    public void MergeFrom(ProductListResponse other) {
       if (other == null) {
         return;
       }
@@ -1270,9 +1258,307 @@ namespace ProductApp.BusinessLogic.Protos {
 
   }
 
-  /// <summary>
-  /// Respuesta para operaciones de eliminación
-  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ProductItem : pb::IMessage<ProductItem>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProductItem> _parser = new pb::MessageParser<ProductItem>(() => new ProductItem());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProductItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProductApp.BusinessLogic.Protos.ProductReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductItem(ProductItem other) : this() {
+      id_ = other.id_;
+      name_ = other.name_;
+      description_ = other.description_;
+      price_ = other.price_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductItem Clone() {
+      return new ProductItem(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 4;
+    private double price_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProductItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProductItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Price, other.Price)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (Price != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Price);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      if (Price != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(Price);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      if (Price != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(Price);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (Price != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProductItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.Price != 0D) {
+        Price = other.Price;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 33: {
+            Price = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 33: {
+            Price = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeleteResponse : pb::IMessage<DeleteResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1288,7 +1574,7 @@ namespace ProductApp.BusinessLogic.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ProductApp.BusinessLogic.Protos.ProductReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ProductApp.BusinessLogic.Protos.ProductReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
