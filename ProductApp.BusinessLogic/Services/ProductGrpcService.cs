@@ -7,129 +7,214 @@ namespace ProductApp.BusinessLogic.Services
     public class ProductGrpcServiceImpl : ProductGrpcService.ProductGrpcServiceBase
     {
         private readonly GrpcProductService _grpcService;
+        private readonly ApiProductService _apiService;
         private readonly ILogger<ProductGrpcServiceImpl> _logger;
 
-        public ProductGrpcServiceImpl(GrpcProductService grpcService, ILogger<ProductGrpcServiceImpl> logger)
+        public ProductGrpcServiceImpl(GrpcProductService grpcService, ApiProductService apiService,
+            ILogger<ProductGrpcServiceImpl> logger)
         {
             _grpcService = grpcService;
+            _apiService = apiService;
             _logger = logger;
         }
 
-        public override Task<ProductListResponse> GetAllProducts(EmptyRequest request, ServerCallContext context)
+        public override async Task<ProductListResponse> GetAllProducts(EmptyRequest request, ServerCallContext context)
         {
             _logger.LogInformation("Obteniendo todos los productos");
 
-            var response = new ProductListResponse();
-            var products = _grpcService.GetAllProducts();
-
-            foreach (var product in products)
+            try
             {
-                response.Products.Add(new ProductItem
+                // Obtener productos de la API
+                var productsFromApi = await _apiService.GetAllProducts();
+                
+                // Actualizar memoria local con datos de la API
+                foreach (var product in productsFromApi)
                 {
-                    Id = product.Id,
-                    Name = product.Name,
-                    Description = product.Description,
-                    Price = (double)product.Price
-                });
-            }
+                    _grpcService.CreateProduct(product);
+                }
 
-            return Task.FromResult(response);
+                var response = new ProductListResponse();
+                foreach (var product in productsFromApi)
+                {
+                    response.Products.Add(new ProductItem
+                    {
+                        Id = product.Id,
+                        Name = product.Name,
+                        Description = product.Description,
+                        Price = (double)product.Price
+                    });
+                }
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al obtener productos");
+                return new ProductListResponse();
+            }
         }
 
-        public override Task<ProductResponse> GetProduct(ProductIdRequest request, ServerCallContext context)
+        public override async Task<ProductResponse> GetProduct(ProductIdRequest request, ServerCallContext context)
         {
             _logger.LogInformation($"Buscando producto con ID: {request.Id}");
 
-            var product = _grpcService.GetProduct(request.Id);
-
-            if (product == null)
+            try
             {
-                return Task.FromResult(new ProductResponse
+                // Intentar obtener de la API primero
+                var productFromApi = await _apiService.GetProduct(request.Id);
+                if (productFromApi == null)
+                {
+                    return new ProductResponse
+                    {
+                        Success = false,
+                        Message = $"No se encontró el producto con ID {request.Id}"
+                    };
+                }
+
+                // Actualizar o crear en memoria local
+                _grpcService.CreateProduct(productFromApi);
+
+                return new ProductResponse
+                {
+                    Success = true,
+                    Id = productFromApi.Id,
+                    Name = productFromApi.Name,
+                    Description = productFromApi.Description,
+                    Price = (double)productFromApi.Price
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error al obtener producto {request.Id}");
+                return new ProductResponse
                 {
                     Success = false,
-                    Message = $"No se encontró el producto con ID {request.Id}"
-                });
+                    Message = $"Error al obtener producto: {ex.Message}"
+                };
             }
-
-            return Task.FromResult(new ProductResponse
-            {
-                Success = true,
-                Id = product.Id,
-                Name = product.Name,
-                Description = product.Description,
-                Price = (double)product.Price
-            });
         }
 
-        public override Task<ProductResponse> CreateProduct(ProductRequest request, ServerCallContext context)
+        public override async Task<ProductResponse> CreateProduct(ProductRequest request, ServerCallContext context)
         {
             _logger.LogInformation("Creando nuevo producto");
 
-            var product = new Product
+            try
             {
-                Name = request.Name,
-                Description = request.Description,
-                Price = (decimal)request.Price
-            };
+                var product = new Product
+                {
+                    Name = request.Name,
+                    Description = request.Description,
+                    Price = (decimal)request.Price
+                };
 
-            var createdProduct = _grpcService.CreateProduct(product);
+                // Crear primero en la API
+                var createdProductInDb = await _apiService.CreateProduct(product);
+                
+                // Si se creó exitosamente en la API, actualizar memoria local
+                if (createdProductInDb != null)
+                {
+                    _grpcService.CreateProduct(createdProductInDb);
+                }
 
-            return Task.FromResult(new ProductResponse
+                return new ProductResponse
+                {
+                    Success = true,
+                    Message = "Producto creado exitosamente",
+                    Id = createdProductInDb.Id,
+                    Name = createdProductInDb.Name,
+                    Description = createdProductInDb.Description,
+                    Price = (double)createdProductInDb.Price
+                };
+            }
+            catch (Exception ex)
             {
-                Success = true,
-                Message = "Producto creado exitosamente",
-                Id = createdProduct.Id,
-                Name = createdProduct.Name,
-                Description = createdProduct.Description,
-                Price = (double)createdProduct.Price
-            });
+                _logger.LogError(ex, "Error al crear producto");
+                return new ProductResponse
+                {
+                    Success = false,
+                    Message = $"Error al crear producto: {ex.Message}"
+                };
+            }
         }
 
-        public override Task<ProductResponse> UpdateProduct(ProductRequest request, ServerCallContext context)
+        public override async Task<ProductResponse> UpdateProduct(ProductRequest request, ServerCallContext context)
         {
             _logger.LogInformation($"Actualizando producto con ID: {request.Id}");
 
-            var product = new Product
+            try
             {
-                Id = request.Id,
-                Name = request.Name,
-                Description = request.Description,
-                Price = (decimal)request.Price
-            };
+                var product = new Product
+                {
+                    Id = request.Id,
+                    Name = request.Name,
+                    Description = request.Description,
+                    Price = (decimal)request.Price
+                };
 
-            var updatedProduct = _grpcService.UpdateProduct(product);
+                // Actualizar primero en la API
+                var updatedProductInDb = await _apiService.UpdateProduct(product);
+                if (updatedProductInDb == null)
+                {
+                    return new ProductResponse
+                    {
+                        Success = false,
+                        Message = $"No se encontró el producto con ID {request.Id} en la base de datos"
+                    };
+                }
 
-            if (updatedProduct == null)
+                // Si se actualizó exitosamente en la API, actualizar memoria local
+                _grpcService.UpdateProduct(updatedProductInDb);
+
+                return new ProductResponse
+                {
+                    Success = true,
+                    Message = "Producto actualizado exitosamente",
+                    Id = updatedProductInDb.Id,
+                    Name = updatedProductInDb.Name,
+                    Description = updatedProductInDb.Description,
+                    Price = (double)updatedProductInDb.Price
+                };
+            }
+            catch (Exception ex)
             {
-                return Task.FromResult(new ProductResponse
+                _logger.LogError(ex, $"Error al actualizar producto {request.Id}");
+                return new ProductResponse
                 {
                     Success = false,
-                    Message = $"No se encontró el producto con ID {request.Id}"
-                });
+                    Message = $"Error al actualizar producto: {ex.Message}"
+                };
             }
-
-            return Task.FromResult(new ProductResponse
-            {
-                Success = true,
-                Message = "Producto actualizado exitosamente",
-                Id = updatedProduct.Id,
-                Name = updatedProduct.Name,
-                Description = updatedProduct.Description,
-                Price = (double)updatedProduct.Price
-            });
         }
 
-        public override Task<DeleteResponse> DeleteProduct(ProductIdRequest request, ServerCallContext context)
+        public override async Task<DeleteResponse> DeleteProduct(ProductIdRequest request, ServerCallContext context)
         {
             _logger.LogInformation($"Eliminando producto con ID: {request.Id}");
 
-            var result = _grpcService.DeleteProduct(request.Id);
-
-            return Task.FromResult(new DeleteResponse
+            try
             {
-                Success = result,
-                Message = result ? "Producto eliminado exitosamente" : $"No se encontró el producto con ID {request.Id}"
-            });
+                // Eliminar primero de la API
+                var resultDb = await _apiService.DeleteProduct(request.Id);
+                if (resultDb)
+                {
+                    // Si se eliminó exitosamente de la API, eliminar de memoria local
+                    _grpcService.DeleteProduct(request.Id);
+                }
+
+                return new DeleteResponse
+                {
+                    Success = resultDb,
+                    Message = resultDb ? "Producto eliminado exitosamente" : $"No se encontró el producto con ID {request.Id}"
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error al eliminar producto {request.Id}");
+                return new DeleteResponse
+                {
+                    Success = false,
+                    Message = $"Error al eliminar producto: {ex.Message}"
+                };
+            }
         }
     }
 }
