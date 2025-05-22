@@ -6,12 +6,12 @@ namespace ProductApp.BusinessLogic.Services
 {
     public class ProductGrpcServiceImpl : ProductGrpcService.ProductGrpcServiceBase
     {
-        private readonly ProductService _productService;
+        private readonly GrpcProductService _grpcService;
         private readonly ILogger<ProductGrpcServiceImpl> _logger;
 
-        public ProductGrpcServiceImpl(ProductService productService, ILogger<ProductGrpcServiceImpl> logger)
+        public ProductGrpcServiceImpl(GrpcProductService grpcService, ILogger<ProductGrpcServiceImpl> logger)
         {
-            _productService = productService;
+            _grpcService = grpcService;
             _logger = logger;
         }
 
@@ -20,7 +20,7 @@ namespace ProductApp.BusinessLogic.Services
             _logger.LogInformation("Obteniendo todos los productos");
 
             var response = new ProductListResponse();
-            var products = _productService.GetAllProducts();
+            var products = _grpcService.GetAllProducts();
 
             foreach (var product in products)
             {
@@ -40,8 +40,8 @@ namespace ProductApp.BusinessLogic.Services
         {
             _logger.LogInformation($"Buscando producto con ID: {request.Id}");
 
-            var product = _productService.GetProduct(request.Id);
-            
+            var product = _grpcService.GetProduct(request.Id);
+
             if (product == null)
             {
                 return Task.FromResult(new ProductResponse
@@ -72,7 +72,7 @@ namespace ProductApp.BusinessLogic.Services
                 Price = (decimal)request.Price
             };
 
-            var createdProduct = _productService.CreateProduct(product);
+            var createdProduct = _grpcService.CreateProduct(product);
 
             return Task.FromResult(new ProductResponse
             {
@@ -97,7 +97,7 @@ namespace ProductApp.BusinessLogic.Services
                 Price = (decimal)request.Price
             };
 
-            var updatedProduct = _productService.UpdateProduct(product);
+            var updatedProduct = _grpcService.UpdateProduct(product);
 
             if (updatedProduct == null)
             {
@@ -123,7 +123,7 @@ namespace ProductApp.BusinessLogic.Services
         {
             _logger.LogInformation($"Eliminando producto con ID: {request.Id}");
 
-            var result = _productService.DeleteProduct(request.Id);
+            var result = _grpcService.DeleteProduct(request.Id);
 
             return Task.FromResult(new DeleteResponse
             {

@@ -1,13 +1,13 @@
-using ProductApp.BusinessLogic.Protos;
 using ProductApp.BusinessLogic.Models;
+
 namespace ProductApp.BusinessLogic.Services
 {
-    public class ProductService
+    public class GrpcProductService
     {
         private readonly List<Product> _products;
         private int _nextId = 1;
 
-        public ProductService()
+        public GrpcProductService()
         {
             _products = new List<Product>
             {
@@ -16,15 +16,9 @@ namespace ProductApp.BusinessLogic.Services
             };
         }
 
-        public List<Product> GetAllProducts()
-        {
-            return _products;
-        }
+        public List<Product> GetAllProducts() => _products;
 
-        public Product? GetProduct(int id)
-        {
-            return _products.FirstOrDefault(p => p.Id == id);
-        }
+        public Product? GetProduct(int id) => _products.FirstOrDefault(p => p.Id == id);
 
         public Product CreateProduct(Product product)
         {
@@ -36,8 +30,7 @@ namespace ProductApp.BusinessLogic.Services
         public Product? UpdateProduct(Product product)
         {
             var existingProduct = _products.FirstOrDefault(p => p.Id == product.Id);
-            if (existingProduct == null)
-                return null;
+            if (existingProduct == null) return null;
 
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
@@ -48,10 +41,7 @@ namespace ProductApp.BusinessLogic.Services
         public bool DeleteProduct(int id)
         {
             var product = _products.FirstOrDefault(p => p.Id == id);
-            if (product == null)
-                return false;
-            
-            return _products.Remove(product);
+            return product != null && _products.Remove(product);
         }
     }
 }

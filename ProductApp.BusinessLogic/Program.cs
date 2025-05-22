@@ -1,29 +1,25 @@
 using ProductApp.BusinessLogic.Models;
 using ProductApp.BusinessLogic.Services;
+using ProductApp.BusinessLogic.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar servicios al contenedor
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<IProductRepository, ProductApiRepository>();
+builder.Services.AddScoped<ApiProductService>();// Solo registrar como Scoped, no como Singleton
 builder.Services.AddGrpc();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
-builder.Services.AddSingleton<ProductService>();
-
+builder.Services.AddSingleton<GrpcProductService>();
 
 // Configuración de Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configuración CORS si es necesario
+// Configuración CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
-
     options.AddPolicy("AllowAll", builder =>
     {
         builder.AllowAnyOrigin()
@@ -46,13 +42,5 @@ app.UseRouting();
 app.UseCors("AllowAll");
 app.MapGrpcService<ProductGrpcServiceImpl>();
 app.MapGet("/", () => "Esta es una aplicación gRPC. Cliente gRPC requerido para comunicarse.");
-
-// app.UseEndpoints(endpoints =>
-// {
-//     // Mapeo de servicios gRPC
-//     endpoints.MapGrpcService<Service>();
-//     // Mapeo de controladores API (si necesitas una API REST adicional)
-//     endpoints.MapControllers();
-// });
 
 app.Run();
